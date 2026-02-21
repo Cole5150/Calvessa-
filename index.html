@@ -1271,6 +1271,8 @@
       return;
     }
 
+    // Redirect to Mailchimp signup with email pre-filled
+    window.open('http://eepurl.com/jzOpHA?EMAIL=' + encodeURIComponent(email), '_blank');
     document.getElementById('waitlistForm').style.display = 'none';
     document.getElementById('waitlistSuccess').style.display = 'block';
   }
